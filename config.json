@@ -1,0 +1,31 @@
+{
+  "max_open_trades": 1,
+  "stake_currency": "USDC",
+  "stake_amount": 0.1,
+  "minimal_roi": {
+    "0": 0.01,
+    "10": 0.005,
+    "20": 0
+  },
+  "stoploss": -0.1,
+  "unfilledtimeout": {
+    "entry": 10
+  },
+  "dry_run": true,
+  "exit_pricing": {
+    "sell_price": 0.01,
+    "sell_price_type": "limit",
+    "sell_price_limit": 0.01
+  },
+  "entry_pricing": {
+    "buy_price": 0.01,
+    "buy_price_type": "limit",
+    "buy_price_limit": 0.01
+  },
+  "exchange": {
+    "name": "woofipro",
+    "key": "orderly public key",
+    "secret": "orderly secret key",
+    "accountId": "orderly account id"
+  }
+}
