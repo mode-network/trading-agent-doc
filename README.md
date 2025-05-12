@@ -43,6 +43,8 @@ exchange = ccxt.woofipro(
 
 ## Freqtrade
 
+Once you have your Orderly account ID, public key, and private key, you can use them to configure the Freqtrade bot. The following steps will guide you through the process of setting up Freqtrade with the Mode Trade exchange.
+
 - `freqtrade create-userdir --userdir data`
 - `freqtrade trade --userdir data --strategy SampleStrategy`
 
