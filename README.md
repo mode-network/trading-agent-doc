@@ -7,7 +7,7 @@
 3. Select "EOA wallet"
 4. Select the broker id Mode or enter manually "mode"
 5. Click on "Register Account" and sign the message
-6. Select scope "read,trading" and click on "Create Orderly key" and sign the message
+6. Select scope "read,trading" and click on "Create Orderly key" and sign the message (the key will expire in 1 year)
 7. Copy your Orderly account ID, Orderly public key and private key
 8. Create the `.env` file based on the example and populate the values
 9. You can deposit: go to the "Assets" tab, enter an amount and proceed to the deposit
