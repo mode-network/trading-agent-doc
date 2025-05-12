@@ -24,11 +24,12 @@ You can also deposit and withdraw from the Mode Trade UI: https://trade.mode.net
 
 ### Usage
 
-Mode Trade and WoofiPro are powered by Orderly.
-You can use the WoofiPro exchange with your credential, but don't use the withdraw feature.
+You can use the beta version of the `ccxt` library for Mode Trade exchange.
 
 ```python
-exchange = ccxt.woofipro(
+import mode_trade
+
+exchange = mode_trade.modetrade(
     {
         "apiKey": os.environ.get("MODE_TRADE_PUBLIC_KEY"),
         "secret": os.environ.get("MODE_TRADE_PRIVATE_KEY"),
@@ -53,7 +54,7 @@ Once you have your Orderly account ID, public key, and private key, you can use 
 ```json
 {
   "exchange": {
-    "name": "woofipro",
+    "name": "modetrade",
     "key": "orderly public key",
     "secret": "orderly secret key",
     "accountId": "orderly account id"
