@@ -327,7 +327,7 @@ class modetrade(Exchange, ImplicitAPI):
                 },
                 "options": {
                     "sandboxMode": False,
-                    "brokerId": "CCXT",
+                    "brokerId": "CCXTMODE",
                     "verifyingContractAddress": "0x6F7a338F2aA472838dEFD3283eB360d4Dff5D203",
                 },
                 "features": {
