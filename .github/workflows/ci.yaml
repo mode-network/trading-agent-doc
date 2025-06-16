@@ -29,7 +29,7 @@ jobs:
         run: |
           pylint --ignore-paths=bt_venv --fail-on=W,E,F --exit-zero ./
 
-      - name: Run Flack8
+      - name: Run flake8
         run: |
           flake8 .
 

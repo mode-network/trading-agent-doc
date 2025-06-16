@@ -3,6 +3,7 @@ from eth_abi import (
     encode as encode_abi_parameters,
 )  # Use 'encode' from eth_abi
 
+
 # Helper: Computes keccak256 hash and returns 32-byte digest.
 def keccak256(data: bytes) -> bytes:
     k = sha3.keccak_256()
@@ -37,4 +38,3 @@ def account_id_from_address(address: str) -> str:
     # Finally, return keccak256(abi_encoded) as a hex string.
     final_hash = keccak256(abi_encoded)
     return "0x" + final_hash.hex()
-
