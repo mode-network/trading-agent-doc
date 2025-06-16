@@ -1,10 +1,11 @@
 import os
 
 
+
 from dotenv import load_dotenv
-import ccxt
 
 
+import mode_trade
 from utils import account_id_from_address
 
 
@@ -12,7 +13,7 @@ load_dotenv()
 
 
 # Mode trade exchange:
-exchange = ccxt.modetrade(
+exchange = mode_trade.modetrade(
     {
         "apiKey": os.environ.get("MODE_TRADE_PUBLIC_KEY"),
         "secret": os.environ.get("MODE_TRADE_PRIVATE_KEY"),

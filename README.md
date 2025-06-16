@@ -24,18 +24,27 @@ You can also deposit and withdraw from the Mode Trade UI: https://trade.mode.net
 
 ### Usage
 
-You can use the beta version of the `ccxt` library for Mode Trade exchange.
+You can use the `ccxt` library for Mode Trade exchange.
 
 ```python
-import mode_trade
+import ccxt
 
-exchange = mode_trade.modetrade(
+exchange = ccxt.modetrade(
     {
         "apiKey": os.environ.get("MODE_TRADE_PUBLIC_KEY"),
         "secret": os.environ.get("MODE_TRADE_PRIVATE_KEY"),
         "accountId": os.environ.get("MODE_TRADE_ACCOUNT_ID")
     }
 )
+
+# Load the markets to get trading pairs info.
+markets = exchange.load_markets()
+print("markets:", markets)
+currencies = exchange.fetch_currencies()
+print("currencies:", currencies)
+balance = exchange.fetch_balance()
+print("balance: ", balance)
+
 ```
 
 ### Run the example
